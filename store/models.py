@@ -25,6 +25,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='product')
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='product')
     title = models.CharField(max_length=200)
+    author = models.CharField(max_length=200, default='Klara Thunberg')
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to='images/')
     slug = models.SlugField(max_length=200)
@@ -32,12 +33,12 @@ class Product(models.Model):
     in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
-    updates = models.DateTimeField(auto_now=True)
+    updated = models.DateTimeField(auto_now=True)
 
     class Meta:
         "To arrange via date created"
         ordering = ('-created',)
 
-        def __str__(self):
-            "Returns the name of the product"
-            return self.title
+    def __str__(self):
+        "Returns the name of the product"
+        return self.title
