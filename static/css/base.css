@@ -1,0 +1,122 @@
+/*Apply To All ------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.space-container{
+    margin-top: 140px;
+    background-color: rgb(193, 193, 240, 0.3);
+}
+
+/*Navigation Bar ----------------------*/
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.nav-search {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6,
+.dilevery-font,
+.navbar {
+    font-weight: bold;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.navborder {
+    border-bottom: 1px solid black;
+}
+
+.nav-2-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-2-item {
+    display: block;
+}
+
+.nav-2-title {
+    color: rgba(0,0,0,.5);
+}
+
+.nav-2-title:hover {
+    color: black;
+}
+
+/* Code Taken */
+.bg-black {
+    background: #000 !important;
+}
+/* End Of Taken Code */
+
+/* Product Page / Category Page --------------------- */
+
+.product-link:hover {
+    text-decoration: none;
+}
+
+.product-display {
+    border: 1px solid black;
+}
+
+.product-display:hover {
+    border: 3px solid black;
+}
+
+.card-title,
+.card-price,
+.card-cat,
+.card-rating {
+    color: black;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-rating {
+    text-align: center;
+}
+
+.view-btn {
+    margin: auto;
+    width: 100%;
+}
+
+.paginator {
+    margin: auto;
+}
+
+.view-product-btn {
+    color: white;
+    font-weight: bold;
+}
+
+.view-product-btn:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product-img {
+    padding-top: 10px;
+    margin: auto;
+    height: 180px;
+    width: 190px;
+    display: block;
+}
+
+/* Product Detail Page ------------------------ */
+
+.product-details-container {
+    text-align: center;
+}
+
