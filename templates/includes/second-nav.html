@@ -5,7 +5,9 @@
           Categories
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a href="" class="dropdown-item"></a>
+        {% for c in categories %}
+          <a href="{{ c.get_absolute_url }}" class="dropdown-item">{{ c.name|title }}</a>
+        {% endfor %}
       </div>
       </li>
       <li class="nav-item dropdown nav-2-item">
