@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+<title>Klarart {% block title %}| {{ category.name }}{% endblock %}</title>
+
 {% block content %}
 <div class="space-container">
-  <h1 class="text-center"> Store</h1>
+  <h1 class="text-center"> {{ category.name|title }}</h1>
   <div class="row">
       <div class="product-container col-10 offset-1">
           <div class="row">

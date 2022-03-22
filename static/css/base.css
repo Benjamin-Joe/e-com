@@ -6,8 +6,18 @@
 }
 
 .space-container{
-    margin-top: 140px;
+    margin-top: 110px;
     background-color: rgb(193, 193, 240, 0.3);
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 /*Navigation Bar ----------------------*/
@@ -65,10 +75,6 @@ h1, h2, h3, h4, h5, h6,
 
 .product-display {
     border: 1px solid black;
-}
-
-.product-display:hover {
-    border: 3px solid black;
 }
 
 .card-title,
