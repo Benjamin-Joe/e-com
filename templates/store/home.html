@@ -9,13 +9,13 @@
               {% for product in products %}
                   <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                       <div class="card product-display">
-                          <a href="{{ product.image.url }}">
+                          <a target="_blank" href="{{ product.image.url }}">
                               <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}" alt="{{ product.title }}">
                           </a>
                           <div class="card-footer bg-white pt-0 border-0 text-left">
                               <div class="row">
                                   <div class="col">
-                                    <p class="lead mb-0 text-center card-title"><a href="">{{ product.title}}</a></p>
+                                    <p class="lead mb-0 text-center card-title"><a class="title-link" href="{{ product.get_absolute_url }}">{{ product.title}}</a></p>
                                       <p class="lead mb-0 text-center font-weight-bold card-price">${{ product.price }}</p>
                                       <p class="text-center card-cat mb-0">{{ product.category }}</p>
                                       {% if product.rating %}

@@ -4,36 +4,34 @@
 <div class="space-container">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="col-12 col-md-6 col-lg-6">
                 <div class="image-container my-3">
-                        <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="detail-image card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <h2 class="mb-0">{{ product.title }}</h2>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="product-details-container">
+                    <h2 class="text-center mt-3">{{ product.title|title }}</h2>
                     <p class="lead mb-0 text-left font-weight-bold text-center">${{ product.price }}</p>
-                    <p><small>{{ product.category }}</small></p>
+                    <p class="text-center mb-0"><small>{{ product.category }}</small></p>
+                    <p class="text-center mb-1">{{ product.description }}</p>
                     {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-medal mr-1"></i>{{ product.rating }} / 5</small>
+                        <small class="text-center"><i class="fas fa-medal mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
-                        <small class="text-muted">No Rating</small>
+                        <small class="text-center">No Rating</small>
                     {% endif %}
-                    <p class="mt-3">{{ product.description }}</p>
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="select">Qty</label>
-                            <select name="" id="select">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                            </select>
-                        </div>
-                    </div>
+                    
+                    <label for="select" class="text-center">Qty</label>
+                        <select class="mb-4" name="" id="select">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    <button class="detail-add-btn btn btn-secondary mb-5">Add To Basket</button>
                 </div>
             </div>
 
